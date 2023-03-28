@@ -1,0 +1,25 @@
+{
+  "name": "s3qap3fullsstack",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tylerpower7/S3QAP3FULLSSTACK.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/tylerpower7/S3QAP3FULLSSTACK/issues"
+  },
+  "homepage": "https://github.com/tylerpower7/S3QAP3FULLSSTACK#readme",
+  "dependencies": {
+    "ejs": "^3.1.9",
+    "express": "^4.18.2",
+    "method-override": "^3.0.0",
+    "pg": "^8.10.0"
+  }
+}

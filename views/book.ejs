@@ -1,0 +1,30 @@
+<html lang="en">
+    <%- include('./partials/head.ejs') %>     
+  <body>
+        <%- include('./partials/nav.ejs') %>    
+    <div>
+           
+      <div>
+                <% if (aBook.length > 0) var book = aBook[0];{ %>        
+        <p><%= book.title %></p>
+
+               
+        <p>
+                    Book id: <%= book.id %> Author id: <%= book.author_id %>
+          publisher:           <%= book.publisher %> ISBN: <%= book.isbn %>    
+             
+        </p>
+
+                <br />
+
+                <% } %>      
+      </div>
+
+         
+    </div>
+
+     
+  </body>
+
+    <%- include('./partials/footer.ejs') %>
+</html>

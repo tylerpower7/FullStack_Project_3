@@ -1,0 +1,11 @@
+curl -X GET http://localhost:3000/api/books/
+
+curl -X GET http://localhost:3000/api/books/1
+
+curl -X DELETE http://localhost:3000/api/books/2
+
+curl -d "title=Harrypotter&author_id=1&publisher=1&isbn=12a" -X PUT http://localhost:3000/api/books/1
+
+curl -d "title=Harry potter&author_id=1&publisher=oxford&isbn=10a" -X PATCH http://localhost:3000/api/books/1
+
+

@@ -1,0 +1,57 @@
+[8:41 p.m.] Kyle Snow
+
+
+
+
+<html lang="en">
+
+    <%- include('./partials/head.ejs') %>
+
+    <body>
+
+        <%- include('./partials/nav.ejs') %>
+
+        <div class="edit-container">
+
+            <div class="form-container">
+
+                <form action="/books/<%= locals.theId %>?_method_override=PATCH" method="POST">
+
+                    <h1 class="form-container-title">Edit Books</h1>
+
+                    <h3 class="input-title">Title</h3>
+
+                    <input class="theinput" type="text" name="title" value="<%= locals.title %>" required> <br>
+
+                    <h3 class="input-title">Author ID</h3>
+
+                    <input class="theinput" type="text" name="author_id" value="<%= locals.author_id %>" required><br>
+
+                    <h3 class="input-title">Publisher</h3>
+
+                    <input class="theinput" type="text" name="publisher" value="<%= locals.publisher %>" required><br>
+
+                    <h3 class="input-title">ISBN</h3>
+
+                    <input class="theinput" type="text" name="isbn" value="<%= locals.isbn %>" required><br>
+
+                    </br> <br>
+
+                    <button class="submit">PATCH</button>
+
+                </form>
+
+            </div>
+
+        </div>
+
+    </body>
+
+    <%- include('./partials/footer.ejs') %>
+
+</html>
+
+
+
+
+
